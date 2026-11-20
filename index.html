@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make Me Glow - Salón de maquillaje, peinados y servicio a domicilio en Puerto Iguazú, Misiones, Argentina. Realzá tu belleza para bodas, fiestas y eventos especiales.">
+    <title>Make Me Glow | Salón de Maquillaje y Peinados en Puerto Iguazú</title>
+    
+    <!-- Google Fonts como fallback elegante (Playfair Display) respetando Tritopani y Times New Roman -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para íconos finos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon con Logo de Make Me Glow -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+
+    <!-- Estilos Principales -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR DE INFORMACIÓN -->
+    <aside class="top-bar" aria-label="Información de contacto rápida">
+        <div class="container top-bar-content">
+            <div class="top-bar-item top-bar-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Puerto Iguazú, Misiones, Argentina</span>
+            </div>
+            <div class="top-bar-item highlight-badge">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>¡Servicio exclusivo a domicilio y hoteles!</span>
+            </div>
+            <div class="top-bar-item top-bar-phone">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/5493757215209?text=Hola%20Make%20Me%20Glow!%20Quisiera%20consultar%20por%20un%20turno" target="_blank" rel="noopener">
+                    +54 9 3757 21-5209
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- NAVEGACIÓN PRINCIPAL (DESKTOP & HEADER) -->
+    <header class="main-header" id="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="brand-logo" aria-label="Make Me Glow Inicio">
+                <img src="images/logo.jpg" alt="Logo Make Me Glow" class="brand-logo-img">
+                <div class="brand-logo-text">
+                    <span class="logo-script">Make Me Glow</span>
+                    <span class="logo-sub">Makeup & Hair Styling</span>
+                </div>
+            </a>
+
+            <!-- Menú de escritorio -->
+            <ul class="nav-list desktop-nav" id="desktop-nav">
+                <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#sobre-nosotros" class="nav-link">El Salón</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#domicilio" class="nav-link">A Domicilio</a></li>
+                <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+                <li class="nav-item"><a href="#precios" class="nav-link">Packs</a></li>
+                <li class="nav-item"><a href="#costos" class="nav-link"><i class="fa-solid fa-lock"></i> Costos</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="nav-cta-desktop">
+                <a href="#reservas" class="btn btn-primary">
+                    <i class="fa-regular fa-calendar-check"></i> Reservar Turno
+                </a>
+            </div>
+
+            <!-- Botón Hamburguesa Móvil -->
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú de navegación">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- DRAWER MÓVIL SEPARADO (Inmune a stacking contexts de header) -->
+    <aside class="mobile-drawer" id="mobile-drawer" aria-label="Menú móvil">
+        <div class="drawer-header">
+            <div class="brand-logo">
+                <img src="images/logo.jpg" alt="Logo Make Me Glow" class="brand-logo-img">
+                <div class="brand-logo-text">
+                    <span class="logo-script">Make Me Glow</span>
+                    <span class="logo-sub">Puerto Iguazú</span>
+                </div>
+            </div>
+            <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="drawer-list">
+            <li><a href="#inicio" class="drawer-link active">Inicio</a></li>
+            <li><a href="#sobre-nosotros" class="drawer-link">El Salón</a></li>
+            <li><a href="#servicios" class="drawer-link">Servicios</a></li>
+            <li><a href="#domicilio" class="drawer-link">A Domicilio</a></li>
+            <li><a href="#galeria" class="drawer-link">Galería</a></li>
+            <li><a href="#precios" class="drawer-link">Packs</a></li>
+            <li><a href="#costos" class="drawer-link"><i class="fa-solid fa-lock"></i> Costos</a></li>
+            <li><a href="#contacto" class="drawer-link">Contacto</a></li>
+        </ul>
+        <div class="drawer-footer">
+            <a href="#reservas" class="btn btn-primary full-width drawer-link">
+                <i class="fa-regular fa-calendar-check"></i> Reservar Turno
+            </a>
+        </div>
+    </aside>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="inicio">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <i class="fa-solid fa-sparkles"></i> Nuevo Salón en Puerto Iguazú
+                </div>
+                <h1 class="hero-title">
+                    Realzá tu belleza, <br class="desktop-br">
+                    <span class="glow-text">despertá tu brillo</span>
+                </h1>
+                <p class="hero-description">
+                    Especialistas en maquillaje profesional y peinados de ensueño para novias, 
+                    quinceañeras y eventos sociales. Viví la experiencia de Make Me Glow en nuestro 
+                    cálido salón o con la comodidad de nuestro servicio a domicilio y en hoteles de Puerto Iguazú.
+                </p>
+
+                <div class="hero-benefits">
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-car-side"></i>
+                        <span>Servicio a domicilio & hoteles</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Cosméticos de alta gama 24hs</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Atención personalizada</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#reservas" class="btn btn-primary btn-lg">
+                        <i class="fa-regular fa-calendar-plus"></i> Agendar Mi Cita
+                    </a>
+                    <a href="#servicios" class="btn btn-outline btn-lg">
+                        Ver Servicios <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image-card">
+                    <!-- SELLO ILUSTRADO OFICIAL DE LA MARCA -->
+                    <div class="hero-brand-seal" title="Logo Oficial Make Me Glow">
+                        <img src="images/logo.jpg" alt="Logo Ilustrado Make Me Glow" class="seal-img">
+                    </div>
+                    <!-- FOTO REAL HERO MAKE ME GLOW -->
+                    <div class="hero-image-wrap">
+                        <img src="images/hero.jpg" alt="Maquillaje profesional y peinado Make Me Glow en Puerto Iguazú" class="hero-main-img">
+                        <span class="glow-badge-floating">✨ Efecto Glow Signature</span>
+                    </div>
+                    <div class="floating-badge badge-domicilio">
+                        <div class="badge-icon"><i class="fa-solid fa-house-chimney-heart"></i></div>
+                        <div class="badge-text">
+                            <strong>¡Vamos donde estés!</strong>
+                            <small>Hoteles y Residencias en Iguazú</small>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>Piel Blindada & Durabilidad Extrema</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="section about-section" id="sobre-nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images reveal-fade-up">
+                    <div class="about-image-wrapper">
+                        <!-- FOTO REAL 1: EL SALÓN -->
+                        <div class="about-img-box about-img-box-1">
+                            <img src="images/about-1.jpg" alt="Salón de belleza Make Me Glow en Puerto Iguazú" class="about-real-img" loading="lazy">
+                            <div class="about-img-tag"><i class="fa-solid fa-sparkles"></i> Nuestro Salón</div>
+                        </div>
+                        <!-- FOTO REAL 2: COSMÉTICOS DE ALTA GAMA -->
+                        <div class="about-img-box about-img-box-2">
+                            <img src="images/about-2.jpg" alt="Cosméticos y brochas profesionales de alta gama" class="about-real-img" loading="lazy">
+                            <div class="about-img-tag"><i class="fa-solid fa-gem"></i> Cosméticos Alta Gama</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text reveal-fade-up">
+                    <div class="about-brand-header">
+                        <div class="about-logo-seal" title="Make Me Glow Salón">
+                            <img src="images/logo.jpg" alt="Logo Ilustrado Make Me Glow" class="about-seal-img">
+                        </div>
+                        <div>
+                            <div class="section-tag">
+                                <i class="fa-solid fa-crown"></i> Bienvenidos a Make Me Glow
+                            </div>
+                            <h2 class="section-title">El nuevo rincón de belleza en Puerto Iguazú</h2>
+                        </div>
+                    </div>
+                    <p class="section-description">
+                        Nacimos con una misión clara: brindar una experiencia de belleza que no solo transforme tu imagen, 
+                        sino que te haga sentir segura, radiante y única. En el corazón de las Tres Fronteras, combinamos 
+                        técnicas de maquillaje de última generación con el arte del peinado profesional.
+                    </p>
+                    <p class="section-description">
+                        Entendemos el ritmo de los eventos, las bodas en la selva misionera y la comodidad que 
+                        necesitás. Por eso, además de nuestro salón equipado para consentirte, 
+                        <strong>trasladamos nuestro estudio completo a tu hotel o residencia</strong> para que tu única 
+                        preocupación sea disfrutar tu gran día.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fa-solid fa-pump-soap"></i></div>
+                            <div>
+                                <h4>Bioseguridad & Asepsia</h4>
+                                <p>Herramientas y pinceles esterilizados minuciosamente para cada cliente.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                            <div>
+                                <h4>Resistencia al Clima</h4>
+                                <p>Técnicas especializadas a prueba de humedad, lágrimas y el calor subtropical.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIO A DOMICILIO (DESTACADO) -->
+    <section class="section home-service-section" id="domicilio">
+        <div class="container">
+            <div class="home-service-banner reveal-scale">
+                <div class="banner-content">
+                    <span class="badge-pill light">
+                        <i class="fa-solid fa-location-arrow"></i> Servicio a Domicilio Exclusivo
+                    </span>
+                    <h2 class="banner-title">Tu suite u hogar convertido en un salón de alta gama</h2>
+                    <p class="banner-text">
+                        ¿Te alojás en los hoteles y resorts de Puerto Iguazú? ¿Querés prepararte tranquila 
+                        en casa junto a tus damas de honor o familia? Llevamos iluminación profesional, tocadores portátiles, 
+                        productos premium y todo lo necesario directo a donde estés.
+                    </p>
+
+                    <div class="home-service-steps">
+                        <div class="step-card">
+                            <span class="step-num">01</span>
+                            <h4>Coordinamos</h4>
+                            <p>Elegís fecha, hora y ubicación en Puerto Iguazú o zona hotelera.</p>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-num">02</span>
+                            <h4>Llegamos a Tiempo</h4>
+                            <p>Puntualidad estricta con todo el equipamiento profesional listo.</p>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-num">03</span>
+                            <h4>¡A Brillar!</h4>
+                            <p>Disfrutás una copa, te relajás y salís radiante a tu evento.</p>
+                        </div>
+                    </div>
+
+                    <div class="banner-actions">
+                        <a href="https://wa.me/5493757215209?text=Hola!%20Quiero%20solicitar%20servicio%20a%20domicilio%20en%20Puerto%20Iguaz%C3%BA" 
+                           target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+                            <i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad a Domicilio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section services-section" id="servicios">
+        <div class="container">
+            <div class="section-header text-center reveal-fade-up">
+                <div class="section-tag">
+                    <i class="fa-solid fa-wand-magic"></i> Menú de Servicios
+                </div>
+                <h2 class="section-title">Diseñados para resaltar tu esencia</h2>
+                <p class="section-subtitle">
+                    Cada look es creado a medida de tus facciones, vestuario y estilo de evento.
+                </p>
+            </div>
+
+            <!-- Filtros de categoría -->
+            <div class="category-filter reveal-fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="makeup">Maquillaje</button>
+                <button class="filter-btn" data-filter="hair">Peinados</button>
+                <button class="filter-btn" data-filter="special">Novias & Quinces</button>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <article class="service-card reveal-fade-up" data-category="makeup">
+                    <div class="service-image-wrap">
+                        <img src="images/service-1.jpg" alt="Maquillaje Social Glam - Make Me Glow" class="service-real-img" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-meta">
+                            <span class="service-badge"><i class="fa-solid fa-palette"></i> Maquillaje</span>
+                            <span class="service-time"><i class="fa-regular fa-clock"></i> 60 - 75 min</span>
+                        </div>
+                        <h3 class="service-title">Maquillaje Social Glam</h3>
+                        <p class="service-desc">
+                            Preparación de la piel con efecto luminoso, delineados según tipo de ojo, sombras satinadas y pestañas individuales para una mirada de impacto.
+                        </p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> Piel blindada resistente al sudor</li>
+                            <li><i class="fa-solid fa-check"></i> Pestañas postizas incluidas</li>
+                            <li><i class="fa-solid fa-check"></i> Fijador de larga duración</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#reservas" class="btn btn-outline btn-sm" onclick="preselectService('Maquillaje Social Glam')">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Servicio 2 -->
+                <article class="service-card reveal-fade-up" data-category="hair">
+                    <div class="service-image-wrap">
+                        <img src="images/service-2.jpg" alt="Peinados de Vanguardia y Ondas - Make Me Glow" class="service-real-img" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-meta">
+                            <span class="service-badge"><i class="fa-solid fa-scissors"></i> Peinado</span>
+                            <span class="service-time"><i class="fa-regular fa-clock"></i> 50 - 70 min</span>
+                        </div>
+                        <h3 class="service-title">Peinados de Vanguardia & Ondas</h3>
+                        <p class="service-desc">
+                            Recogidos elegantes, ondas al agua estilo Hollywood, semirrecogidos románticos y trenzas bohemias diseñadas para durar toda la fiesta.
+                        </p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> Preparación térmica capilar</li>
+                            <li><i class="fa-solid fa-check"></i> Fijación flexible sin acartonar</li>
+                            <li><i class="fa-solid fa-check"></i> Colocación de tocados / tiaras</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#reservas" class="btn btn-outline btn-sm" onclick="preselectService('Peinados de Vanguardia & Ondas')">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Servicio 3 -->
+                <article class="service-card reveal-fade-up" data-category="special">
+                    <div class="service-image-wrap">
+                        <img src="images/service-3.jpg" alt="Pack Novias y Quinceañeras - Make Me Glow" class="service-real-img" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-meta">
+                            <span class="service-badge gold"><i class="fa-solid fa-crown"></i> Pack Especial</span>
+                            <span class="service-time"><i class="fa-regular fa-clock"></i> Personalizado</span>
+                        </div>
+                        <h3 class="service-title">Pack Novias & Quinceañeras</h3>
+                        <p class="service-desc">
+                            La experiencia nupcial definitiva. Incluye prueba integral previa, diseño de visagismo, kit de retoque para el evento y atención exclusiva.
+                        </p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> Prueba completa previa de maquillaje y peinado</li>
+                            <li><i class="fa-solid fa-check"></i> Tratamiento preparador de hidratación facial</li>
+                            <li><i class="fa-solid fa-check"></i> Opción a domicilio o suite nupcial</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#reservas" class="btn btn-outline btn-sm" onclick="preselectService('Pack Novias & Quinceañeras')">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Servicio 4 -->
+                <article class="service-card reveal-fade-up" data-category="makeup">
+                    <div class="service-image-wrap">
+                        <img src="images/service-4.jpg" alt="Piel Glow y No-Makeup Look - Make Me Glow" class="service-real-img" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-meta">
+                            <span class="service-badge"><i class="fa-solid fa-wand-sparkles"></i> Maquillaje</span>
+                            <span class="service-time"><i class="fa-regular fa-clock"></i> 40 min</span>
+                        </div>
+                        <h3 class="service-title">Piel Glow & No-Makeup Look</h3>
+                        <p class="service-desc">
+                            Ideal para sesiones fotográficas turísticas en las Cataratas, almuerzos de gala o eventos de día. Piel ultra luminosa y fresca sin sobrecargar.
+                        </p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> Acabado satinado 'glass skin'</li>
+                            <li><i class="fa-solid fa-check"></i> Corrección puntual de ojeras</li>
+                            <li><i class="fa-solid fa-check"></i> Labios jugosos con bálsamo hidratante</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#reservas" class="btn btn-outline btn-sm" onclick="preselectService('Piel Glow & No-Makeup')">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Servicio 5 -->
+                <article class="service-card reveal-fade-up" data-category="special">
+                    <div class="service-image-wrap">
+                        <img src="images/service-5.jpg" alt="Servicio Grupal y Madrinas - Make Me Glow" class="service-real-img" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-meta">
+                            <span class="service-badge"><i class="fa-solid fa-users"></i> Grupal</span>
+                            <span class="service-time"><i class="fa-regular fa-clock"></i> Por acordar</span>
+                        </div>
+                        <h3 class="service-title">Servicio Grupal & Madrinas</h3>
+                        <p class="service-desc">
+                            Atención simultánea o secuencial para grupos de amigas, madrinas o egresadas en salón o a domicilio. Disfruten una tarde relajante juntas.
+                        </p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> Descuento especial por grupo (+3 personas)</li>
+                            <li><i class="fa-solid fa-check"></i> Brindis de cortesía en el salón</li>
+                            <li><i class="fa-solid fa-check"></i> Coordinación milimétrica de horarios</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#reservas" class="btn btn-outline btn-sm" onclick="preselectService('Servicio Grupal / Madrinas')">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Servicio 6 -->
+                <article class="service-card reveal-fade-up" data-category="hair">
+                    <div class="service-image-wrap">
+                        <img src="images/service-6.jpg" alt="Peinados Editoriales y Moda - Make Me Glow" class="service-real-img" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-meta">
+                            <span class="service-badge"><i class="fa-solid fa-sparkles"></i> Editorial</span>
+                            <span class="service-time"><i class="fa-regular fa-clock"></i> 60 min</span>
+                        </div>
+                        <h3 class="service-title">Peinados Editoriales & Books</h3>
+                        <p class="service-desc">
+                            Estilismo especializado para producciones de moda, sesiones fotográficas en locaciones selváticas de Iguazú y catálogos de indumentaria.
+                        </p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> Resistencia a tomas exteriores</li>
+                            <li><i class="fa-solid fa-check"></i> Acompañamiento en set opcional</li>
+                            <li><i class="fa-solid fa-check"></i> Adaptabilidad rápida para cambios de outfit</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#reservas" class="btn btn-outline btn-sm" onclick="preselectService('Peinados Editoriales & Books')">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA / PORTAFOLIO CON FOTOS REALES -->
+    <section class="section gallery-section" id="galeria">
+        <div class="container">
+            <div class="section-header text-center reveal-fade-up">
+                <div class="section-tag">
+                    <i class="fa-solid fa-camera"></i> Galería de Trabajos
+                </div>
+                <h2 class="section-title">Nuestra Galería de Brillo</h2>
+                <p class="section-subtitle">
+                    Descubrí algunos de nuestros trabajos reales en novias, producciones y eventos en Puerto Iguazú. ¡Cada look es una obra de arte!
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Foto 1 -->
+                <div class="gallery-item reveal-scale" onclick="openModal('Novia Romántica', 'Maquillaje de larga duración en tonos cálidos con peinado recogido bajo.', 'images/gallery-1.jpg')">
+                    <div class="gallery-image-wrap">
+                        <img src="images/gallery-1.jpg" alt="Novia Romántica en Puerto Iguazú - Make Me Glow" class="gallery-real-img" loading="lazy">
+                        <div class="gallery-overlay-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Ver Detalle</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Novia Romántica</h4>
+                        <span>Maquillaje & Peinado Nupcial</span>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="gallery-item reveal-scale" onclick="openModal('Glow Social de Noche', 'Ojos esfumados con glitter fino y piel satinada.', 'images/gallery-2.jpg')">
+                    <div class="gallery-image-wrap">
+                        <img src="images/gallery-2.jpg" alt="Smokey Glam Make Me Glow" class="gallery-real-img" loading="lazy">
+                        <div class="gallery-overlay-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Ver Detalle</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Smokey Glam</h4>
+                        <span>Maquillaje de Noche</span>
+                    </div>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="gallery-item reveal-scale" onclick="openModal('Ondas Hollywoodenses', 'Textura brillante y ondas definidas con caída perfecta.', 'images/gallery-3.jpg')">
+                    <div class="gallery-image-wrap">
+                        <img src="images/gallery-3.jpg" alt="Ondas Glamour Make Me Glow" class="gallery-real-img" loading="lazy">
+                        <div class="gallery-overlay-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Ver Detalle</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Ondas Glamour</h4>
+                        <span>Peinado de Fiesta</span>
+                    </div>
+                </div>
+
+                <!-- Foto 4 -->
+                <div class="gallery-item reveal-scale" onclick="openModal('Quinceañera Soñada', 'Look juvenil, fresco y súper luminoso para 15 años.', 'images/gallery-4.jpg')">
+                    <div class="gallery-image-wrap">
+                        <img src="images/gallery-4.jpg" alt="Quinceañera Radiante Make Me Glow" class="gallery-real-img" loading="lazy">
+                        <div class="gallery-overlay-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Ver Detalle</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Quinceañera Radiante</h4>
+                        <span>Look Integral 15 Años</span>
+                    </div>
+                </div>
+
+                <!-- Foto 5 -->
+                <div class="gallery-item reveal-scale" onclick="openModal('Semirrecogido Bohemio', 'Trenzas delicadas con accesorios florales naturales.', 'images/gallery-5.jpg')">
+                    <div class="gallery-image-wrap">
+                        <img src="images/gallery-5.jpg" alt="Estilo Boho Chic Make Me Glow" class="gallery-real-img" loading="lazy">
+                        <div class="gallery-overlay-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Ver Detalle</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Estilo Boho Chic</h4>
+                        <span>Peinado con Tocados</span>
+                    </div>
+                </div>
+
+                <!-- Foto 6 -->
+                <div class="gallery-item reveal-scale" onclick="openModal('Producción Fotográfica', 'Maquillaje resistente al aire libre para sesión en Cataratas.', 'images/gallery-6.jpg')">
+                    <div class="gallery-image-wrap">
+                        <img src="images/gallery-6.jpg" alt="Sesión Exterior en Cataratas Make Me Glow" class="gallery-real-img" loading="lazy">
+                        <div class="gallery-overlay-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Ver Detalle</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Sesión Exterior</h4>
+                        <span>Producción Turística</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="photo-tip">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <strong>Tip de Brillo:</strong> Hacé clic en cualquier fotografía para ampliar el detalle de maquillaje y peinado en alta resolución.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKS Y PRECIOS -->
+    <section class="section pricing-section" id="precios">
+        <div class="container">
+            <div class="section-header text-center reveal-fade-up">
+                <div class="section-tag">
+                    <i class="fa-solid fa-tags"></i> Planes Especiales
+                </div>
+                <h2 class="section-title">Packs pensados para tu celebración</h2>
+                <p class="section-subtitle">
+                    Opciones combinadas de Maquillaje + Peinado con descuentos especiales en Puerto Iguazú.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Pack 1 -->
+                <div class="pricing-card reveal-fade-up">
+                    <div class="pricing-header">
+                        <h3 class="plan-title">Glow Social</h3>
+                        <p class="plan-subtitle">Ideal para invitadas de bodas, cenas o eventos.</p>
+                        <div class="plan-price">
+                            <span class="currency">Consultar</span>
+                            <span class="period">En salón</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Maquillaje social completo</li>
+                        <li><i class="fa-solid fa-check"></i> Pestañas postizas de alta calidad</li>
+                        <li><i class="fa-solid fa-check"></i> Peinado a elección (ondas o recogido)</li>
+                        <li><i class="fa-solid fa-check"></i> Fijación de larga duración</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Prueba previa de look</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Traslado a domicilio</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#reservas" class="btn btn-outline full-width" onclick="preselectService('Pack Glow Social')">Elegir Pack</a>
+                    </div>
+                </div>
+
+                <!-- Pack 2 (Destacado) -->
+                <div class="pricing-card featured reveal-fade-up">
+                    <div class="popular-ribbon">Más Elegido</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-title">Glow VIP a Domicilio</h3>
+                        <p class="plan-subtitle">La comodidad absoluta en tu hotel o casa en Iguazú.</p>
+                        <div class="plan-price">
+                            <span class="currency">Consultar</span>
+                            <span class="period">A Domicilio / Hotel</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Maquillaje Glam & Piel Blindada</li>
+                        <li><i class="fa-solid fa-check"></i> Pestañas postizas individuales</li>
+                        <li><i class="fa-solid fa-check"></i> Peinado sofisticado con accesorios</li>
+                        <li><i class="fa-solid fa-check"></i> Traslado con tocador e iluminación</li>
+                        <li><i class="fa-solid fa-check"></i> Kit de emergencia para retoque</li>
+                        <li><i class="fa-solid fa-check"></i> Sin límite de espera por retrasos</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#reservas" class="btn btn-primary full-width" onclick="preselectService('Pack Glow VIP a Domicilio')">Reservar a Domicilio</a>
+                    </div>
+                </div>
+
+                <!-- Pack 3 -->
+                <div class="pricing-card reveal-fade-up">
+                    <div class="pricing-header">
+                        <h3 class="plan-title">Novias de Ensueño</h3>
+                        <p class="plan-subtitle">Tratamiento integral de reina para tu casamiento.</p>
+                        <div class="plan-price">
+                            <span class="currency">Consultar</span>
+                            <span class="period">Plan Integral</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Prueba completa de peinado y maquillaje</li>
+                        <li><i class="fa-solid fa-check"></i> Preparación e hidratación de piel previa</li>
+                        <li><i class="fa-solid fa-check"></i> Atención a domicilio el día de la boda</li>
+                        <li><i class="fa-solid fa-check"></i> Asistencia para colocar velo y vestido</li>
+                        <li><i class="fa-solid fa-check"></i> Kit nupcial de retoque exclusivo</li>
+                        <li><i class="fa-solid fa-check"></i> Descuento 15% para madrina/mamá</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#reservas" class="btn btn-outline full-width" onclick="preselectService('Pack Novias de Ensueño')">Consultar Fechas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header text-center reveal-fade-up">
+                <div class="section-tag">
+                    <i class="fa-solid fa-comments"></i> Experiencias Glow
+                </div>
+                <h2 class="section-title">Lo que dicen nuestras clientas</h2>
+                <p class="section-subtitle">
+                    Nos apasiona verlas sonreír frente al espejo antes de salir.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-fade-up">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Contraté el servicio a domicilio en el hotel donde me alojaba para una boda en Iguazú. Llegaron súper puntuales, con su luz profesional y me dejaron impecable. El maquillaje me duró toda la noche a pesar de la humedad de la selva!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Florencia Martínez</strong>
+                            <span>Invitada de Boda (Buenos Aires)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-fade-up">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Make Me Glow es lo que le faltaba a Puerto Iguazú. El salón es hermoso, relajante y con una estética divina. El peinado de ondas al agua me quedó tal cual la referencia que les mostré. ¡100% recomendadas!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Camila Benítez</strong>
+                            <span>Clienta de Puerto Iguazú</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-fade-up">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Hice el pack de novia para mi casamiento y fue la mejor decisión. La prueba previa me dio muchísima tranquilidad y el día del evento vinieron a mi quinta con la mejor vibra del mundo. ¡Me sentí una reina!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Sofía Valenzuela</strong>
+                            <span>Novia Make Me Glow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE RESERVA / WHATSAPP INTERACTIVO -->
+    <section class="section booking-section" id="reservas">
+        <div class="container">
+            <div class="booking-wrapper reveal-scale">
+                <div class="booking-info">
+                    <div class="section-tag light">
+                        <i class="fa-regular fa-calendar-check"></i> Turnos Online
+                    </div>
+                    <h2 class="booking-title">Agendá tu momento de belleza</h2>
+                    <p class="booking-desc">
+                        Completá este breve formulario y te redirigiremos a WhatsApp con todos los datos 
+                        listos para que confirmemos tu fecha al instante. Sin demoras ni complicaciones.
+                    </p>
+
+                    <div class="contact-quick-list">
+                        <div class="quick-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Horarios de Atención:</strong>
+                                <span>Lunes a Sábados: 09:00 - 20:00 hs</span>
+                                <small>Servicios a domicilio disponibles fuera de horario con reserva previa.</small>
+                            </div>
+                        </div>
+                        <div class="quick-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Ubicación:</strong>
+                                <span>Puerto Iguazú, Misiones, Argentina.</span>
+                            </div>
+                        </div>
+                        <div class="quick-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp Directo:</strong>
+                                <span><a href="https://wa.me/5493757215209" target="_blank" rel="noopener">+54 9 3757 21-5209</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-box">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="client-name">Nombre y Apellido *</label>
+                            <input type="text" id="client-name" class="form-control" placeholder="Ej: Valentina Rossi" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="service-select">Servicio Deseado *</label>
+                                <select id="service-select" class="form-control" required>
+                                    <option value="" disabled selected>Seleccioná una opción</option>
+                                    <option value="Maquillaje Social Glam">Maquillaje Social Glam</option>
+                                    <option value="Peinados de Vanguardia & Ondas">Peinados & Ondas</option>
+                                    <option value="Pack Novias & Quinceañeras">Pack Novias & Quinceañeras</option>
+                                    <option value="Piel Glow & No-Makeup">Piel Glow Natural</option>
+                                    <option value="Pack Glow VIP a Domicilio">Pack Glow VIP a Domicilio</option>
+                                    <option value="Servicio Grupal / Madrinas">Servicio Grupal</option>
+                                    <option value="Otro / Consulta Personalizada">Otro / Consulta</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="service-location">Modalidad *</label>
+                                <select id="service-location" class="form-control" required>
+                                    <option value="En el Salón (Puerto Iguazú)">En el Salón</option>
+                                    <option value="A Domicilio / Hotel en Iguazú">A Domicilio / Hotel</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="booking-date">Fecha del Evento *</label>
+                                <input type="date" id="booking-date" class="form-control" required>
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="booking-time">Horario Aproximado *</label>
+                                <input type="time" id="booking-time" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="address-group" style="display: none;">
+                            <label for="client-address">Dirección u Hotel en Puerto Iguazú</label>
+                            <input type="text" id="client-address" class="form-control" placeholder="Ej: Hotel Panoramic Grand / Barrio Villa Nueva">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-notes">Detalles adicionales o consultas</label>
+                            <textarea id="client-notes" class="form-control" rows="3" placeholder="Contanos si es para una boda, cuántas personas son o si tenés alguna duda..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width btn-lg">
+                            <i class="fa-brands fa-whatsapp"></i> Enviar Reserva por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="section faq-section">
+        <div class="container max-w-800">
+            <div class="section-header text-center reveal-fade-up">
+                <div class="section-tag">
+                    <i class="fa-solid fa-circle-question"></i> Respuestas Rápidas
+                </div>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="faq-accordion reveal-fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Con cuánta anticipación debo reservar?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para bodas y quinceañeras recomendamos reservar entre 2 y 4 meses antes, especialmente los fines de semana en temporada alta. Para eventos sociales recomendamos de 1 a 2 semanas de anticipación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo funciona el servicio a domicilio en Puerto Iguazú?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nos trasladamos hasta tu casa, quinta o habitación de hotel en Puerto Iguazú. Llevamos valijas con maquillaje profesional, luz anular/tocador LED, planchas y secadores térmicos. Solo requerimos un enchufe cercano y una mesa despejada.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Los productos resisten el clima y la humedad de Misiones?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Totalmente! Trabajamos con técnicas de piel blindada, fijadores a prueba de agua y sprays capilares anti-frizz resistentes a la humedad característica de Puerto Iguazú y las Cataratas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Puedo llevar una foto de referencia?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Claro que sí! Nos encanta ver tus inspiraciones de Pinterest o Instagram. Analizamos tus facciones para adaptar el look que te gusta y potenciar tu belleza de forma armónica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRIVADA: CALCULADORA DE COSTOS Y PRECIOS -->
+    <section class="section cost-calculator-section" id="costos">
+        <div class="container">
+            <div class="section-header text-center reveal-fade-up">
+                <div class="section-tag">
+                    <i class="fa-solid fa-calculator"></i> Gestión Exclusiva del Salón
+                </div>
+                <h2 class="section-title">Calculadora de Costos & Precios</h2>
+                <p class="section-subtitle">
+                    Herramienta privada de Make Me Glow para calcular costos fijos, costos variables, costo total y determinar precios de venta con ganancia neta.
+                </p>
+            </div>
+
+            <!-- VISTA BLOQUEADA CON CONTRASEÑA -->
+            <div class="calc-auth-box reveal-fade-up" id="calc-auth-box">
+                <div class="calc-auth-card">
+                    <div class="auth-icon-circle">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="auth-card-title">Acceso Protegido</h3>
+                    <p class="auth-card-desc">
+                        Ingresá la contraseña administrativa para acceder a la calculadora financiera de Make Me Glow.
+                    </p>
+
+                    <form id="calc-auth-form" class="auth-form" onsubmit="event.preventDefault(); handleAuthSubmit();">
+                        <div class="form-group password-field-group">
+                            <label for="admin-password">Contraseña de Administrador</label>
+                            <div class="password-input-wrapper">
+                                <i class="fa-solid fa-key password-field-icon"></i>
+                                <input type="password" id="admin-password" class="form-control" placeholder="Ingresá la clave de acceso" required autocomplete="current-password">
+                                <button type="button" class="btn-toggle-password" id="btn-toggle-password" aria-label="Mostrar contraseña" onclick="togglePasswordVisibility()">
+                                    <i class="fa-solid fa-eye" id="password-eye-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="auth-error-msg" id="auth-error-msg" style="display: none;">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span>Contraseña incorrecta. Probá nuevamente.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width btn-lg">
+                            <i class="fa-solid fa-unlock"></i> Desbloquear Panel de Costos
+                        </button>
+
+                        <div class="auth-hint">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <small>Contraseña de acceso: <strong>micro2026</strong></small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- VISTA DESBLOQUEADA: CALCULADORA COMPLETA -->
+            <div class="calc-dashboard-wrapper" id="calc-dashboard-wrapper" style="display: none;">
+                <!-- Barra superior de gestión -->
+                <div class="calc-top-bar">
+                    <div class="calc-status-badge">
+                        <span class="status-indicator"></span>
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>Panel Administrativo Desbloqueado</span>
+                    </div>
+                    <div class="calc-top-actions">
+                        <button type="button" class="btn btn-outline btn-sm" onclick="resetCalculatorForm()">
+                            <i class="fa-solid fa-arrow-rotate-left"></i> Restablecer Valores
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm btn-lock-panel" onclick="lockCalculator()">
+                            <i class="fa-solid fa-lock"></i> Bloquear Panel
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Selector de Plantilla de Servicio -->
+                <div class="calc-preset-bar">
+                    <label for="service-preset-select"><i class="fa-solid fa-wand-magic-sparkles"></i> Cargar valores sugeridos de Make Me Glow:</label>
+                    <select id="service-preset-select" class="form-control preset-select" onchange="loadServicePreset(this.value)">
+                        <option value="custom">-- Seleccionar plantilla o ingresar manual --</option>
+                        <option value="maquillaje-social" selected>Maquillaje Social Glam (En Salón)</option>
+                        <option value="peinado-ondas">Peinados de Vanguardia & Ondas</option>
+                        <option value="pack-novia">Pack Novias & Quinces (Integral a Domicilio)</option>
+                        <option value="glow-express">Piel Glow & No-Makeup Look</option>
+                        <option value="glow-vip-domicilio">Pack Glow VIP a Domicilio / Hotel</option>
+                        <option value="servicio-grupal">Servicio Grupal & Madrinas</option>
+                        <option value="producto-skincare">Producto: Kit Glow de Retoque / Skincare</option>
+                    </select>
+                </div>
+
+                <!-- Grid Principal de la Calculadora -->
+                <div class="calc-main-grid">
+                    <!-- Columna Izquierda: Entradas de Costos Fijos y Variables -->
+                    <div class="calc-inputs-col">
+                        <!-- Card 1: Identificación -->
+                        <div class="calc-card">
+                            <div class="calc-card-header">
+                                <div class="calc-card-icon"><i class="fa-solid fa-tag"></i></div>
+                                <div>
+                                    <h3 class="calc-card-title">1. Identificación del Servicio / Producto</h3>
+                                    <p class="calc-card-subtitle">Nombre del ítem y volumen estimado de atención mensual</p>
+                                </div>
+                            </div>
+                            <div class="calc-card-body">
+                                <div class="form-group">
+                                    <label for="item-name">Nombre del Servicio o Producto:</label>
+                                    <input type="text" id="item-name" class="form-control calc-trigger-text" value="Maquillaje Social Glam" placeholder="Ej: Maquillaje Fiesta, Peinado Novia...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="monthly-clients">Turnos / Servicios Estimados por Mes: 
+                                        <span class="info-tag" title="Sirve para prorratear los costos fijos mensuales en cada servicio">¿Para qué sirve?</span>
+                                    </label>
+                                    <input type="number" id="monthly-clients" class="form-control calc-trigger" value="40" min="1" step="1" placeholder="Ej: 40 turnos al mes">
+                                    <small class="field-hint">Divide los costos fijos totales del mes entre esta cantidad de turnos.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Costos Fijos Mensuales -->
+                        <div class="calc-card">
+                            <div class="calc-card-header">
+                                <div class="calc-card-icon"><i class="fa-solid fa-building"></i></div>
+                                <div>
+                                    <h3 class="calc-card-title">2. Costos Fijos Mensuales del Salón</h3>
+                                    <p class="calc-card-subtitle">Gastos estructurales fijos de Make Me Glow en Puerto Iguazú</p>
+                                </div>
+                            </div>
+                            <div class="calc-card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="fixed-rent">Alquiler del Salón ($)</label>
+                                        <input type="number" id="fixed-rent" class="form-control calc-trigger" value="120000" min="0" step="1000">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="fixed-services">Luz, Agua, Wifi, Limpieza ($)</label>
+                                        <input type="number" id="fixed-services" class="form-control calc-trigger" value="35000" min="0" step="1000">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="fixed-salary">Sueldo Base / Honorario Propio ($)</label>
+                                        <input type="number" id="fixed-salary" class="form-control calc-trigger" value="250000" min="0" step="5000">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="fixed-marketing">Publicidad & Redes Sociales ($)</label>
+                                        <input type="number" id="fixed-marketing" class="form-control calc-trigger" value="25000" min="0" step="1000">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fixed-other">Otros Costos Fijos (Seguros, software, contador) ($)</label>
+                                    <input type="number" id="fixed-other" class="form-control calc-trigger" value="20000" min="0" step="1000">
+                                </div>
+
+                                <div class="fixed-summary-box">
+                                    <span>Costo Fijo Mensual Total: <strong id="lbl-total-fixed-monthly">$ 450.000</strong></span>
+                                    <span>Costo Fijo prorrateado por turno: <strong id="lbl-fixed-per-unit" class="color-accent">$ 11.250</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Costos Variables Unitarios -->
+                        <div class="calc-card">
+                            <div class="calc-card-header">
+                                <div class="calc-card-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                                <div>
+                                    <h3 class="calc-card-title">3. Costos Variables por Servicio / Producto</h3>
+                                    <p class="calc-card-subtitle">Insumos y materiales que se gastan exclusivamente en cada turno</p>
+                                </div>
+                            </div>
+                            <div class="calc-card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="var-cosmetics">Cosméticos / Bases / Fijadores ($)</label>
+                                        <input type="number" id="var-cosmetics" class="form-control calc-trigger" value="4500" min="0" step="100">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="var-lashes">Pestañas postizas / Adhesivos ($)</label>
+                                        <input type="number" id="var-lashes" class="form-control calc-trigger" value="3000" min="0" step="100">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="var-disposables">Descartables (Esponjas, gasas, bioseguridad) ($)</label>
+                                        <input type="number" id="var-disposables" class="form-control calc-trigger" value="1800" min="0" step="100">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="var-transport">Viático / Traslado a Domicilio/Hotel ($)</label>
+                                        <input type="number" id="var-transport" class="form-control calc-trigger" value="0" min="0" step="500">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="var-other">Otros Insumos / Accesorios de Peinado / Packaging ($)</label>
+                                    <input type="number" id="var-other" class="form-control calc-trigger" value="1200" min="0" step="100">
+                                </div>
+
+                                <div class="var-summary-box">
+                                    <span>Costo Variable por Servicio: <strong id="lbl-total-variable-unit" class="color-accent">$ 10.500</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Margen de Ganancia -->
+                        <div class="calc-card">
+                            <div class="calc-card-header">
+                                <div class="calc-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <div>
+                                    <h3 class="calc-card-title">4. Margen de Ganancia Deseado</h3>
+                                    <p class="calc-card-subtitle">Rentabilidad que deseás obtener sobre el costo total</p>
+                                </div>
+                            </div>
+                            <div class="calc-card-body">
+                                <div class="form-group">
+                                    <div class="slider-header">
+                                        <label for="profit-margin">Margen de Ganancia:</label>
+                                        <span class="margin-badge" id="lbl-margin-val">60%</span>
+                                    </div>
+                                    <input type="range" id="profit-margin" class="range-slider calc-trigger" min="10" max="300" step="5" value="60">
+                                    <div class="range-ticks">
+                                        <span>20% (Mínimo)</span>
+                                        <span>60% (Recomendado)</span>
+                                        <span>120% (Alto)</span>
+                                        <span>200%+ (Novias)</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mt-3">
+                                    <label for="fee-card">Comisión Posnet / Tarjetas / Cobro Digital (% opcional)</label>
+                                    <input type="number" id="fee-card" class="form-control calc-trigger" value="0" min="0" max="25" step="0.5" placeholder="Ej: 5% si el cliente abona con tarjeta">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Dashboard de Resultados en Tiempo Real -->
+                    <div class="calc-results-col">
+                        <div class="results-sticky-card">
+                            <div class="results-header">
+                                <span class="badge-pill light"><i class="fa-solid fa-receipt"></i> Balance en Tiempo Real</span>
+                                <h3 class="results-title">Estructura de Costos & Precio</h3>
+                                <p class="results-item-name" id="res-item-title">Maquillaje Social Glam</p>
+                            </div>
+
+                            <!-- Métricas de Costo Fijo y Variable -->
+                            <div class="metrics-grid">
+                                <div class="metric-box box-fixed">
+                                    <span class="metric-label"><i class="fa-solid fa-building"></i> Costo Fijo Asignado</span>
+                                    <strong class="metric-value" id="res-fixed-cost">$ 11.250</strong>
+                                    <small class="metric-sub">Prorrateo por turno</small>
+                                </div>
+
+                                <div class="metric-box box-variable">
+                                    <span class="metric-label"><i class="fa-solid fa-spray-can-sparkles"></i> Costo Variable</span>
+                                    <strong class="metric-value" id="res-var-cost">$ 10.500</strong>
+                                    <small class="metric-sub">Materiales directos</small>
+                                </div>
+                            </div>
+
+                            <!-- Costo Total Real -->
+                            <div class="total-cost-banner">
+                                <div class="total-cost-text">
+                                    <span>COSTO TOTAL REAL</span>
+                                    <small>Costo Fijo + Costo Variable</small>
+                                </div>
+                                <div class="total-cost-val" id="res-total-cost">$ 21.750</div>
+                            </div>
+
+                            <!-- Tarjeta Destacada de Precio de Venta -->
+                            <div class="price-highlight-card">
+                                <div class="price-badge-ribbon">Precio de Venta Sugerido</div>
+                                <div class="price-value-container">
+                                    <span class="price-currency">$</span>
+                                    <span class="price-amount" id="res-sale-price">34.800</span>
+                                </div>
+                                <p class="price-formula-note">Incluye margen de ganancia del <strong id="res-margin-applied">60%</strong>.</p>
+                                
+                                <div class="profit-highlight">
+                                    <span>Ganancia Neta Limpia por Turno:</span>
+                                    <strong id="res-net-profit" class="profit-amount">+ $ 13.050</strong>
+                                </div>
+                            </div>
+
+                            <!-- Indicadores Financieros Extras -->
+                            <div class="extra-indicators">
+                                <div class="extra-item">
+                                    <i class="fa-solid fa-scale-balanced"></i>
+                                    <div>
+                                        <strong>Punto de Equilibrio del Salón:</strong>
+                                        <span id="res-break-even">19 turnos al mes</span>
+                                        <small>(Cantidad de turnos necesarios para cubrir todos los costos fijos)</small>
+                                    </div>
+                                </div>
+                                <div class="extra-item">
+                                    <i class="fa-solid fa-coins"></i>
+                                    <div>
+                                        <strong>Margen sobre Precio de Venta:</strong>
+                                        <span id="res-margin-on-sales">37.5%</span>
+                                        <small>De cada $100 que cobrás, este porcentaje es pura ganancia.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="results-actions">
+                                <button type="button" class="btn btn-primary full-width btn-lg" onclick="saveCurrentCalculation()">
+                                    <i class="fa-solid fa-bookmark"></i> Guardar en Mi Lista de Precios
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla de Lista de Precios Guardados -->
+                <div class="saved-prices-section mt-5">
+                    <div class="saved-header">
+                        <div>
+                            <h3 class="saved-title"><i class="fa-solid fa-list-check"></i> Mi Lista de Precios Guardada</h3>
+                            <p class="saved-subtitle">Servicios y productos calculados y archivados en tu salón.</p>
+                        </div>
+                        <div class="saved-actions">
+                            <button type="button" class="btn btn-outline btn-sm" onclick="exportPricesToPrint()">
+                                <i class="fa-solid fa-print"></i> Imprimir / PDF
+                            </button>
+                            <button type="button" class="btn btn-outline btn-sm" onclick="clearSavedPrices()">
+                                <i class="fa-solid fa-trash-can"></i> Limpiar Lista
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="saved-table" id="saved-prices-table">
+                            <thead>
+                                <tr>
+                                    <th>Servicio / Producto</th>
+                                    <th>Costo Fijo</th>
+                                    <th>Costo Variable</th>
+                                    <th>Costo Total</th>
+                                    <th>Margen</th>
+                                    <th>Precio Sugerido</th>
+                                    <th>Ganancia Neta</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="saved-prices-body">
+                                <!-- Se llena dinámicamente con JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACTO -->
+    <footer class="main-footer" id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <a href="#inicio" class="footer-logo">
+                    <img src="images/logo.jpg" alt="Logo Make Me Glow" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <span class="logo-script">Make Me Glow</span>
+                        <span class="logo-sub">Puerto Iguazú, Misiones</span>
+                    </div>
+                </a>
+                <p class="footer-text">
+                    Tu nuevo salón de confianza en Puerto Iguazú. Realzamos tu luz propia con dedicación, 
+                    técnicas de alta gama y atención con calidez humana.
+                </p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/5493757215209" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="#servicios">Maquillaje Social</a></li>
+                    <li><a href="#servicios">Peinados & Ondas</a></li>
+                    <li><a href="#servicios">Novias & Quinces</a></li>
+                    <li><a href="#domicilio">Servicio a Domicilio</a></li>
+                    <li><a href="#servicios">Maquillaje para Books</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-nosotros">Sobre el Salón</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#precios">Packs de Precios</a></li>
+                    <li><a href="#reservas">Reservar Turno</a></li>
+                    <li><a href="#costos"><i class="fa-solid fa-lock"></i> Gestión de Costos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Ubicación & Contacto</h4>
+                <p class="footer-contact-item">
+                    <i class="fa-solid fa-location-dot"></i> Puerto Iguazú, Misiones, Argentina
+                </p>
+                <p class="footer-contact-item">
+                    <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5493757215209" target="_blank" rel="noopener">+54 9 3757 21-5209</a>
+                </p>
+                <p class="footer-contact-item">
+                    <i class="fa-regular fa-envelope"></i> makemeglow.iguazu@gmail.com
+                </p>
+                <p class="footer-contact-item">
+                    <i class="fa-solid fa-bell"></i> Turnos con reserva previa
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>© 2026 Make Me Glow. Todos los derechos reservados. Puerto Iguazú, Misiones.</p>
+                <p class="credit">Diseñado para brillar ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/5493757215209?text=Hola%20Make%20Me%20Glow!%20Quisiera%20consultar%20por%20un%20turno" 
+       class="floating-whatsapp-btn" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">¿Consultas? ¡Chateá con nosotras!</span>
+    </a>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- MODAL PARA VER FOTOS DE LA GALERÍA -->
+    <div class="modal" id="image-modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()" aria-label="Cerrar ventana"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-image-container" id="modal-photo-box">
+                <img src="" id="modal-img" class="modal-real-img" alt="Vista previa de trabajo">
+            </div>
+            <div class="modal-footer-caption">
+                <h4 id="modal-caption-title">Título</h4>
+                <p id="modal-caption-desc">Descripción</p>
+                <a href="#reservas" class="btn btn-primary btn-sm mt-3" onclick="closeModal()">Pedir este look</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
